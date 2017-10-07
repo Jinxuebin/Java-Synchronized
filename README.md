@@ -12,11 +12,11 @@
  * [1. 修饰一个代码块](#1-修饰一个代码块)
  	*  [1.1 dome1-两个线程访问同一个加锁对象](#11-dome1-两个线程访问同一个加锁对象)
  	*  [1.2 dome2-两个线程访问不同的加锁对象](#12-dome2-两个线程访问不同的加锁对象)
- 	*  [1.3 dome3-两个线程访问同一个既有synchronized修饰的代码块，也有非synchronized修饰的代码块的对象](#13-dome3-两个线程访问同一个既有synchronized修饰的代码块，也有非synchronized修饰的代码块的对象)
+ 	*  [1.3 dome3-两个线程访问同一个既有synchronized修饰的代码块，也有非synchronized修饰的代码块的对象](#13-dome3-两个线程访问同)
  * [2. 修饰一个方法](#2-修饰一个方法)
  * [3. 修饰一个静态的方法](#3-修饰一个静态的方法)
  * [4. 修饰一个类](#4-修饰一个类)
- * [5. 结束]()
+ * [5. 结束](#5-结束)
  	
 	
 
@@ -175,7 +175,7 @@ Bcount:4
 A:4
 Bcount:5
 </pre>
-## 2.修饰一个方法
+## 2. 修饰一个方法
 >用法：
 <pre>
 public <strong>synchronized</strong> void <strong>method()</strong> 
@@ -208,7 +208,7 @@ class child{
 * 在定义接口方法是不能使用synchronized关键字。
 * 在构造方法不能使用synchronized关键字，但可以使用synchronized代码块来进行同步。
 
-# 3.修饰一个静态的方法
+# 3. 修饰一个静态的方法
 >用法:
 
 <pre>
@@ -269,7 +269,7 @@ SyncThread2:7
 SyncThread2:8
 SyncThread2:9
 </pre>
-# 4.修饰一个类
+# 4. 修饰一个类
 >用法：
 <pre>
 class ClassName{
@@ -334,7 +334,7 @@ SyncThread2:8
 SyncThread2:9
 </pre>
 其效果和synchronized作用域静态类一致，作用对象为该类的所有对象。
-# 5.结束
+# 5. 结束
 Thank you !
 Good bye !
 
